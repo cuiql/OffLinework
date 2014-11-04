@@ -1,5 +1,7 @@
 <resources>
 
     <string name="app_name">WaBao</string>
+    <string name="user_name">用户名：</string>
+    <string name="password">密&#160;&#160;&#160;&#160;码：</string>
 
 </resources>
