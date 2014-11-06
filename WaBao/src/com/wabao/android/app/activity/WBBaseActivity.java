@@ -1,24 +1,26 @@
 package com.wabao.android.app.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
-import android.view.View.OnClickListener;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.wabao.android.app.R;
 
-public class WBBaseActivity extends Activity {
+public class WBBaseActivity extends FragmentActivity {
 
 	protected LinearLayout mContainer;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
+		
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 	}
 
 	protected void setLeftButton(int resourceId, OnClickListener l) {
@@ -42,6 +44,17 @@ public class WBBaseActivity extends Activity {
 		rightButton.setVisibility(View.VISIBLE);
 		rightButton.setImageResource(resourceId);
 		rightButton.setOnClickListener(l);
+	}
+
+	protected void setTitle(String title) {
+		TextView titleText = (TextView) findViewById(R.id.title);
+
+		if (titleText == null) {
+			Log.e("", "Your didn't include activity_topbar.xml in view");
+			return;
+		}
+		titleText.setText(title);
+
 	}
 
 }

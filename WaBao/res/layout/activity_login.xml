@@ -11,13 +11,14 @@
         android:layout_height="fill_parent"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical" >
 
         <LinearLayout
             android:id="@+id/name_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:background="@drawable/edit_bg_top"
             android:orientation="horizontal"
             android:padding="10dp" >
@@ -26,6 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/user_name"
+                android:textColor="#FF0000"
                 android:textSize="20sp" />
 
             <EditText
@@ -35,14 +37,15 @@
 
         <View
             android:id="@+id/zline"
-            android:layout_below="@+id/name_layout"
             android:layout_width="match_parent"
             android:layout_height="1dp"
+            android:layout_below="@+id/name_layout"
             android:background="@drawable/zline" />
 
-        <LinearLayout android:layout_below="@+id/zline"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/zline"
             android:background="@drawable/edit_bg_bottom"
             android:orientation="horizontal"
             android:padding="10dp" >
@@ -51,6 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/password"
+                android:textColor="#FF0000"
                 android:textSize="20sp" />
 
             <EditText
@@ -60,13 +64,39 @@
             </EditText>
         </LinearLayout>
 
-        <ImageButton
-            android:
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/phone_register"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:text="@string/find_password"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_login_normal" />
-
+            android:layout_above="@+id/textView1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/button_login_normal"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
     </RelativeLayout>
 
 </LinearLayout>

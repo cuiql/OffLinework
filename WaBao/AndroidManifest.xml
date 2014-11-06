@@ -6,19 +6,32 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name=".activity.WBApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name=".activity.WBLoginActivity" >
+        <activity
+            android:name=".activity.WBStartActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.WBLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WBMainActivity"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name=".activity.WBIntroductionActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
