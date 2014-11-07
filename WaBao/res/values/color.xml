@@ -3,5 +3,8 @@
 
     <color name="tab_title_color_normal">#6F3D06</color>
     <color name="tab_title_color_selected">#FFFFFF</color>
+    
+    <color name="list_item_bg_normal">#FFFFFF</color>
+    <color name="list_item_bg_pressed">#CCCCCC</color>
 
 </resources>

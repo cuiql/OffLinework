@@ -6,7 +6,8 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="15" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".activity.WBApplication"
@@ -29,8 +30,14 @@
         <activity
             android:name=".activity.WBMainActivity"
             android:screenOrientation="portrait" />
-         <activity
+        <activity
             android:name=".activity.WBIntroductionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WBDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WBQuestionnaireActivity"
             android:screenOrientation="portrait" />
     </application>
 
