@@ -4,39 +4,4 @@
     android:layout_height="48dp"
     android:orientation="vertical" >
 
-    <RelativeLayout
-        android:id="@+id/rl_topbar"
-        android:layout_width="fill_parent"
-        android:layout_height="48dp"
-        android:layout_alignParentTop="true"
-        android:background="#fa4689" >
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_centerInParent="true"
-            android:gravity="center_vertical"
-            android:textColor="#FFFFFF"
-            android:textSize="22sp" />
-
-        <ImageButton
-            android:id="@+id/btn_right"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:background="#00000000"
-            android:src="@drawable/button_more_normal" />
-
-        <ImageButton
-            android:id="@+id/btn_left"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:background="#00000000"
-            android:src="@drawable/button_back_normal" />
-    </RelativeLayout>
-
 </LinearLayout>

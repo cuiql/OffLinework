@@ -4,6 +4,5 @@
     android:layout_height="48dp"
     android:orientation="vertical" >
 
-    <include layout="@layout/activity_topbar"/>
 
 </LinearLayout>
