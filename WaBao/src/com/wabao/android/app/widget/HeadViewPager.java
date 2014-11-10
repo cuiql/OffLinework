@@ -1,12 +1,13 @@
     package com.wabao.android.app.widget;  
       
-    import android.content.Context;  
-    import android.support.v4.view.PagerAdapter;  
-    import android.support.v4.view.ViewPager;  
-    import android.util.AttributeSet;  
-    import android.view.MotionEvent;  
-    import android.view.View;  
-    import android.view.ViewGroup;  
+    import android.content.Context;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
       
     /** 
      * 全能Viewpager，自动滚动，循环滑动、分页指示器 更新数据必须调用getMyPagerAdapter,方法获取到的PagerAdapter 

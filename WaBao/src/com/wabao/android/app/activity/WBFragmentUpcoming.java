@@ -16,8 +16,8 @@ import android.widget.TextView;
 
 import com.wabao.android.app.R;
 import com.wabao.android.app.adapter.HeadViewAdapter;
+import com.wabao.android.app.widget.CirclePageIndicator;
 import com.wabao.android.app.widget.HeadViewPager;
-import com.wabao.android.app.widget.LinePageIndicator;
 
 public class WBFragmentUpcoming extends Fragment {
 
@@ -41,7 +41,7 @@ public class WBFragmentUpcoming extends Fragment {
 
 		adapter.setDatas(datas);
 		viewPager.setAdapter(adapter);
-		LinePageIndicator indicator = (LinePageIndicator) rootView
+        CirclePageIndicator indicator = (CirclePageIndicator) rootView
 				.findViewById(R.id.indicator);
 		indicator.setViewPager(viewPager);
 

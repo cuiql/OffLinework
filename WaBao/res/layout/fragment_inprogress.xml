@@ -8,7 +8,7 @@
     <RelativeLayout
         android:id="@+id/top_layout"
         android:layout_width="match_parent"
-        android:layout_height="240dp" >
+        android:layout_height="100dp" >
 
         <com.wabao.android.app.widget.HeadViewPager
             android:id="@+id/view_pager"
@@ -16,9 +16,9 @@
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true" />
 
-        <com.wabao.android.app.widget.LinePageIndicator
+        <com.wabao.android.app.widget.CirclePageIndicator
             android:id="@+id/indicator"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="30dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true" />
