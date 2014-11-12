@@ -6,10 +6,10 @@
     android:orientation="horizontal" >
 
     <ImageView
+        android:layout_margin="6dp"
         android:id="@+id/thumbnail"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_margin="5dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:src="@drawable/list_item_thumbnail" />
 
     <LinearLayout
@@ -25,6 +25,8 @@
             android:layout_height="30dp"
             android:gravity="left|center"
             android:text="中青旅全国出发马尔代夫吉哈德岛"
+            android:singleLine="true"
+            android:ellipsize="end"
             android:textSize="18sp" />
 
         <TextView
@@ -34,6 +36,8 @@
             android:gravity="left|center"
             android:text="航班】北京/上海/广州/成都多地出发【住宿】豪华五星级九点住宿，一价全包"
             android:textColor="#B3B3B3"
+            android:lines="2"
+            android:ellipsize="end"
             android:textSize="14sp" />
     </LinearLayout>
 

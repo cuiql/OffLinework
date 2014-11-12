@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:paddingLeft="5dp"
-        android:text="活动开始日期：2014.10.6 &#160;距离活动开始还有1天03个小时"
+        android:text="活动开始日期：2014.10.6"
         android:textColor="#FFFFFF"
         android:textSize="12sp"/>
 
