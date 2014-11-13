@@ -4,7 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
+import android.view.Window;
+import android.widget.TextView;
 
+import com.wabao.android.app.R;
 
 public class WBBaseActivity extends FragmentActivity {
 
@@ -14,15 +18,20 @@ public class WBBaseActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		mContext = this;
 
 	}
 
 	protected void setTitle(String title) {
 
-		if (title == null) {
+		TextView titleTextView = (TextView) findViewById(R.id.title);
+		if (titleTextView == null) {
+
+			Log.e("SetTitle", "not include title");
 			return;
 		}
+		titleTextView.setText(title);
 
 	}
 

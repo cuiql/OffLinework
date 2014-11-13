@@ -4,6 +4,8 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+    <include layout="@layout/top_bar" />
+
     <FrameLayout
         android:id="@+id/realtabcontent"
         android:layout_width="fill_parent"
@@ -13,14 +15,14 @@
     <android.support.v4.app.FragmentTabHost
         android:id="@android:id/tabhost"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" 
-        android:background="#FFFFFF">
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
 
         <FrameLayout
             android:id="@android:id/tabcontent"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="0" />            
+            android:layout_weight="0" />
     </android.support.v4.app.FragmentTabHost>
 
 </LinearLayout>

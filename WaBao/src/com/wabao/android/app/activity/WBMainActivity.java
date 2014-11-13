@@ -29,8 +29,6 @@ public class WBMainActivity extends WBBaseActivity {
 	// Tab选项卡的文字
 	private String mTextviewArray[] = { "正在进行", "即将开始", "我的灯神" };
 
-	private String mCurrentTabId = mTextviewArray[0];
-
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
@@ -64,9 +62,7 @@ public class WBMainActivity extends WBBaseActivity {
 			@Override
 			public void onTabChanged(String tabId) {
 				setTitle(tabId);
-				mCurrentTabId = tabId;
 
-				invalidateOptionsMenu();
 			}
 
 		});
