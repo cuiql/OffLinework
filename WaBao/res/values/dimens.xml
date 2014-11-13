@@ -1,5 +1,7 @@
 <resources>
 
     <dimen name="activity_horizontal_margin">20dp</dimen>
+    <dimen name="detail_list_title_fontsize">20sp</dimen>
+    <dimen name="detail_list_content_fontsize">18sp</dimen>
 
 </resources>

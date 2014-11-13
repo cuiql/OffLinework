@@ -22,7 +22,8 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="10dp"
-        android:src="@drawable/button_back" />
+        android:src="@drawable/button_back"
+        android:visibility="gone" />
 
     <RelativeLayout
         android:id="@+id/compose_layout"
@@ -30,7 +31,8 @@
         android:layout_height="36dp"
         android:layout_centerVertical="true"
         android:layout_marginRight="10dp"
-        android:layout_toLeftOf="@+id/single_button" >
+        android:layout_toLeftOf="@+id/single_button"
+        android:visibility="gone" >
 
         <ImageView
             android:id="@+id/compose_icon"

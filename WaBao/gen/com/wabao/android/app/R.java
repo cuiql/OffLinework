@@ -11,6 +11,8 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int detail_list_content_fontcolor=0x7f040005;
+        public static final int detail_list_title_fontcolor=0x7f040004;
         public static final int list_item_bg_normal=0x7f040002;
         public static final int list_item_bg_pressed=0x7f040003;
         public static final int tab_title_color_normal=0x7f040000;
@@ -18,6 +20,8 @@ public final class R {
     }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f050000;
+        public static final int detail_list_content_fontsize=0x7f050002;
+        public static final int detail_list_title_fontsize=0x7f050001;
     }
     public static final class drawable {
         public static final int action_bar_bg=0x7f020000;
@@ -50,34 +54,42 @@ public final class R {
         public static final int ui=0x7f02001b;
     }
     public static final class id {
-        public static final int back=0x7f08000e;
-        public static final int compose_icon=0x7f08001a;
-        public static final int compose_layout=0x7f080019;
-        public static final int compose_notification=0x7f08001b;
-        public static final int content=0x7f080016;
-        public static final int imageView1=0x7f080002;
-        public static final int imageView2=0x7f080007;
-        public static final int imageView3=0x7f080008;
-        public static final int imageView4=0x7f080009;
-        public static final int imageView5=0x7f08000b;
-        public static final int imageView6=0x7f08000a;
-        public static final int imageView7=0x7f08000c;
-        public static final int indicator=0x7f080011;
-        public static final int introduction_end=0x7f080013;
-        public static final int join_answer=0x7f080000;
-        public static final int linearLayout1=0x7f080004;
-        public static final int list_view=0x7f080012;
-        public static final int login=0x7f080005;
-        public static final int question=0x7f08000f;
-        public static final int question_mark=0x7f08000d;
-        public static final int realtabcontent=0x7f080006;
-        public static final int single_button=0x7f080018;
-        public static final int textView1=0x7f080003;
-        public static final int textview=0x7f080017;
-        public static final int thumbnail=0x7f080014;
-        public static final int title=0x7f080015;
-        public static final int top_layout=0x7f080010;
-        public static final int view_pager=0x7f080001;
+        public static final int back=0x7f080016;
+        public static final int compose_icon=0x7f080022;
+        public static final int compose_layout=0x7f080021;
+        public static final int compose_notification=0x7f080023;
+        public static final int content=0x7f08001e;
+        public static final int content_description=0x7f080006;
+        public static final int content_product=0x7f080005;
+        public static final int content_sponsor=0x7f080007;
+        public static final int content_startDate=0x7f080008;
+        public static final int content_title=0x7f080004;
+        public static final int end_date=0x7f080009;
+        public static final int imageView1=0x7f080001;
+        public static final int imageView2=0x7f08000f;
+        public static final int imageView3=0x7f080010;
+        public static final int imageView4=0x7f080011;
+        public static final int imageView5=0x7f080013;
+        public static final int imageView6=0x7f080012;
+        public static final int imageView7=0x7f080014;
+        public static final int include1=0x7f080000;
+        public static final int indicator=0x7f080019;
+        public static final int introduction_end=0x7f08001b;
+        public static final int join=0x7f080002;
+        public static final int linearLayout1=0x7f08000c;
+        public static final int list_view=0x7f08001a;
+        public static final int login=0x7f08000d;
+        public static final int question=0x7f080017;
+        public static final int question_mark=0x7f080015;
+        public static final int realtabcontent=0x7f08000e;
+        public static final int scrollView1=0x7f080003;
+        public static final int single_button=0x7f080020;
+        public static final int textView1=0x7f08000b;
+        public static final int textview=0x7f08001f;
+        public static final int thumbnail=0x7f08001c;
+        public static final int title=0x7f08001d;
+        public static final int top_layout=0x7f080018;
+        public static final int view_pager=0x7f08000a;
     }
     public static final class layout {
         public static final int activity_detail=0x7f030000;
@@ -124,11 +136,19 @@ public final class R {
         Base application theme for API 14+. This theme completely replaces
         AppBaseTheme from BOTH res/values/styles.xml and
         res/values-v11/styles.xml on API 14+ devices.
+
     
- API 14 theme customizations can go here. 
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        
          */
         public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;

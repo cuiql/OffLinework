@@ -2,18 +2,126 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:background="@drawable/home_bg">
+    android:background="@drawable/home_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/top_bar" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:background="@drawable/content" />
 
     <Button
-        android:id="@+id/join_answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/join"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFF00"
+        android:text="参与活动" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/join"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:background="@drawable/home_tab_bg" 
-        android:text="进入答题"
-        android:textColor="#FFFFFF"/>
+        android:layout_below="@+id/imageView1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/content_title"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="寻宝失落之城"
+                android:textColor="@color/detail_list_title_fontcolor"
+                android:textSize="@dimen/detail_list_title_fontsize" />
+
+            <TextView
+                android:id="@+id/content_product"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="产品名称"
+                android:textColor="@color/detail_list_content_fontcolor"
+                android:textSize="@dimen/detail_list_content_fontsize" />
+
+            <TextView
+                android:id="@+id/content_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="失落之城十分易守难攻，与鳄鱼出没的沼泽相邻，群山环绕，无数神秘的生物隐藏于此，更糟糕的是，一股神秘的邪教组织瞄准了这里，暗流涌动，毁灭与狂乱时刻爆发，巨大的财宝在等着你，赶来试一试么？"
+                android:textColor="@color/detail_list_content_fontcolor"
+                android:textSize="@dimen/detail_list_content_fontsize" />
+
+            <TextView
+                android:id="@+id/content_sponsor"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="赞助商：大连参得宝海参"
+                android:textColor="@color/detail_list_content_fontcolor"
+                android:textSize="@dimen/detail_list_content_fontsize" />
+
+            <TextView
+                android:id="@+id/content_startDate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="活动开始日期：2014年12月12日"
+                android:textColor="@color/detail_list_content_fontcolor"
+                android:textSize="@dimen/detail_list_content_fontsize" />
+
+            <TextView
+                android:id="@+id/end_date"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="活动结束日期：2014年12月12日"
+                android:textColor="@color/detail_list_content_fontcolor"
+                android:textSize="@dimen/detail_list_content_fontsize" />
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
