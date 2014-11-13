@@ -29,7 +29,6 @@ public class WBLoginActivity extends WBBaseActivity {
 
 		setContentView(R.layout.activity_login);
 
-		mActionBar.hide();
 
 		setTitle(getString(R.string.title_login_activity));
 

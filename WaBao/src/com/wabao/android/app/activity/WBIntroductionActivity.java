@@ -24,7 +24,6 @@ public class WBIntroductionActivity extends WBBaseActivity {
 
         setContentView(R.layout.activity_introduction);
 
-        mActionBar.hide();
 
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         mViewPager.setAdapter(new IntroductionAdapter());

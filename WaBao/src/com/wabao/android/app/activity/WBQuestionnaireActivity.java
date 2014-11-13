@@ -20,7 +20,6 @@ public class WBQuestionnaireActivity extends WBBaseActivity implements
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_questionnaire);
-		mActionBar.hide();
 
 		ImageView back = (ImageView) findViewById(R.id.back);
 

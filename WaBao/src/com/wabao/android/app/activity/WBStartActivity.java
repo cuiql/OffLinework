@@ -45,7 +45,6 @@ public class WBStartActivity extends WBBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mActionBar.hide();
         mPreManager = AppUtils.getSharedPreferencesManager();
 
         setContentView(R.layout.activity_loading);

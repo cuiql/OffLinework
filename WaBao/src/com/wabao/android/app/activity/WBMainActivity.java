@@ -3,8 +3,9 @@ package com.wabao.android.app.activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
@@ -26,12 +27,13 @@ public class WBMainActivity extends WBBaseActivity {
 			WBFragmentUpcoming.class, WBFragmentMine.class };
 
 	// Tab选项卡的文字
-	private String mTextviewArray[] = { "正在进行", "即将开始", "我的哇宝" };
+	private String mTextviewArray[] = { "正在进行", "即将开始", "我的灯神" };
+
+	private String mCurrentTabId = mTextviewArray[0];
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
 		initView();
 	}
 
@@ -39,7 +41,7 @@ public class WBMainActivity extends WBBaseActivity {
 	 * 初始化组件
 	 */
 	private void initView() {
-		
+
 		setTitle(mTextviewArray[0]);
 		layoutInflater = LayoutInflater.from(this);
 
@@ -52,8 +54,9 @@ public class WBMainActivity extends WBBaseActivity {
 			TabSpec tabSpec = mTabHost.newTabSpec(mTextviewArray[i])
 					.setIndicator(getTabItemView(i));
 			mTabHost.addTab(tabSpec, fragmentArray[i], null);
-			mTabHost.getTabWidget().getChildAt(i)
-					.setBackgroundResource(R.drawable.selector_tab_background);
+			View v = mTabHost.getTabWidget().getChildAt(i);
+
+			v.setBackgroundResource(R.drawable.selector_tab_background);
 		}
 
 		mTabHost.setOnTabChangedListener(new OnTabChangeListener() {
@@ -61,9 +64,13 @@ public class WBMainActivity extends WBBaseActivity {
 			@Override
 			public void onTabChanged(String tabId) {
 				setTitle(tabId);
+				mCurrentTabId = tabId;
+
+				invalidateOptionsMenu();
 			}
 
 		});
+
 	}
 
 	/**

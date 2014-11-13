@@ -31,25 +31,29 @@ public final class R {
         public static final int home_bg=0x7f020008;
         public static final int home_tab_bg=0x7f020009;
         public static final int ic_launcher=0x7f02000a;
-        public static final int item_upcoming_list_time=0x7f02000b;
-        public static final int lam_over=0x7f02000c;
-        public static final int lam_todo=0x7f02000d;
-        public static final int list_item_bg=0x7f02000e;
-        public static final int list_item_thumbnail=0x7f02000f;
-        public static final int loading_bg=0x7f020010;
-        public static final int loading_logo=0x7f020011;
-        public static final int login_bg=0x7f020012;
-        public static final int login_edit_bg=0x7f020013;
-        public static final int map=0x7f020014;
-        public static final int popup_bg=0x7f020015;
-        public static final int question_bg=0x7f020016;
-        public static final int question_dialog=0x7f020017;
-        public static final int selector_tab_background=0x7f020018;
-        public static final int tab_title_color=0x7f020019;
-        public static final int ui=0x7f02001a;
+        public static final int ic_menu_compose=0x7f02000b;
+        public static final int item_upcoming_list_time=0x7f02000c;
+        public static final int lam_over=0x7f02000d;
+        public static final int lam_todo=0x7f02000e;
+        public static final int list_item_bg=0x7f02000f;
+        public static final int list_item_thumbnail=0x7f020010;
+        public static final int loading_bg=0x7f020011;
+        public static final int loading_logo=0x7f020012;
+        public static final int login_bg=0x7f020013;
+        public static final int login_edit_bg=0x7f020014;
+        public static final int map=0x7f020015;
+        public static final int popup_bg=0x7f020016;
+        public static final int question_bg=0x7f020017;
+        public static final int question_dialog=0x7f020018;
+        public static final int selector_tab_background=0x7f020019;
+        public static final int tab_title_color=0x7f02001a;
+        public static final int ui=0x7f02001b;
     }
     public static final class id {
         public static final int back=0x7f08000e;
+        public static final int compose_icon=0x7f08001a;
+        public static final int compose_layout=0x7f080019;
+        public static final int compose_notification=0x7f08001b;
         public static final int content=0x7f080016;
         public static final int imageView1=0x7f080002;
         public static final int imageView2=0x7f080007;
@@ -67,6 +71,7 @@ public final class R {
         public static final int question=0x7f08000f;
         public static final int question_mark=0x7f08000d;
         public static final int realtabcontent=0x7f080006;
+        public static final int single_button=0x7f080018;
         public static final int textView1=0x7f080003;
         public static final int textview=0x7f080017;
         public static final int thumbnail=0x7f080014;
@@ -89,6 +94,7 @@ public final class R {
         public static final int item_inprogress_list=0x7f03000b;
         public static final int item_main_tab=0x7f03000c;
         public static final int item_upcoming_list=0x7f03000d;
+        public static final int top_bar=0x7f03000e;
     }
     public static final class string {
         public static final int app_name=0x7f060000;

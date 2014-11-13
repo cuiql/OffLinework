@@ -3,5 +3,8 @@
 
     <item android:drawable="@drawable/home_tab_bg" android:state_pressed="true"/>
     <item android:drawable="@drawable/home_tab_bg" android:state_selected="true"/>
+    
+    <item android:drawable="@drawable/home_tab_bg" android:state_pressed="false"/>
+    <item android:drawable="@drawable/home_tab_bg" android:state_selected="false"/>
 
 </selector>
